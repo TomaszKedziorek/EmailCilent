@@ -1,0 +1,47 @@
+.label,.button .text, .text-field, .choice-box{
+   -fx-font-size: 8pt;
+}
+.slider > .axis {
+    -fx-tick-label-font-size: 8pt;
+}
+.headLabel{
+   -fx-font-size: 20pt;
+}
+
+.errorText{
+    -fx-font-size: 8pt;
+}
+.text-field {
+    -fx-font-size: 8pt;
+}
+
+.text-field:focused {
+    -fx-font-size: 8pt;
+}
+/*Table view:*/
+.table-view .column-header-background .label{
+    -fx-font-size: 8pt;
+}
+.table-view .table-cell{
+    -fx-font-size: 8pt;
+}
+/*Tree view:*/
+.tree-cell{
+    -fx-font-size: 8pt;
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-font-size: 8pt;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-font-size: 8pt;
+}
+.menu-item .label {
+    -fx-font-size: 8pt;
+}
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-font-size: 8pt;
+}

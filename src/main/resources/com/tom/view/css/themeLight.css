@@ -1,0 +1,373 @@
+/*Light theme*/
+/* .root {        */
+    /* -fx-text-background-color: #161430; */
+    /* -fx-text-fill: #161430; */
+    /* -fx-text-base-color: #161430; */
+    /* -fx-text-inner-color: #161430; */
+	/* -fx-selection-bar-text: #161430; */
+	
+	/* -default-color: #45f5cf; */
+	/* -hover-color: #68f7d8; */
+	/* -focused-color: derive(#51bda5,-30%); */
+	
+	/* -color-default-text:#161430; */
+	/* -color-highlight-text:#4890F9; */
+	/* -color-text-inputs:#161430; */
+	/* -unread-color: derive(-hover-color,40%); */
+		
+	/* -bgc-darker:derive(#19e0ae,0%); */
+	/* -bgc-lighter:derive(-bgc-darker,50%); */
+	/* -background-color-gradient:linear-gradient(to top left,-bgc-darker 21%,-bgc-lighter 39%,-bgc-darker 75%);	 */
+/* } */
+.root {       
+    -fx-text-background-color: #161430;
+    -fx-text-fill: #161430;
+    -fx-text-base-color: #161430;
+    -fx-text-inner-color: #161430;
+	-fx-selection-bar-text: #161430;
+	
+	-default-color: #b2ccd1;
+	-hover-color: #9bbec4;
+	-focused-color: derive(#9bbec4,-30%);
+	
+	-color-default-text:#394345;
+	-color-highlight-text:#4890F9;
+	-color-text-inputs:#161430;
+	-unread-color: derive(-hover-color,40%);
+		
+	-bgc-darker:derive(#c5d6d9,0%);
+	-bgc-lighter:derive(-bgc-darker,50%);
+	-background-color-gradient:linear-gradient(to top left,-bgc-darker 21%,-bgc-lighter 39%,-bgc-darker 75%);	
+}
+.container{
+    -fx-background-color: -background-color-gradient;
+}
+.errorLabel{
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 13pt;
+}
+.headLabel{
+   -fx-alignment:center;
+}
+/*--------Label----------------------------------------------------*/
+.label {   
+}
+/*--------Button---------------------------------------------------*/
+
+.button {   
+    -fx-background-color: -default-color;
+    -fx-background-radius: 5;    
+    -fx-padding: 5 15 5 15;
+}
+.button:hover {
+    -fx-background-color: -hover-color;
+	-fx-cursor: hand;
+}
+/*--------Slider---------------------------------------------------*/
+
+ 
+.slider .thumb {
+    -fx-background-color:-hover-color;
+    -fx-background-radius: 10;
+}
+.slider .thumb:hover {
+    -fx-background-color: -hover-color;
+	-fx-cursor: hand;
+}
+.slider .track {
+    -fx-background-color:-default-color;    
+    -fx-background-radius: 5;
+}
+.slider .track:hover {
+    -fx-background-color:-hover-color;    
+	-fx-cursor: hand;
+}
+.slider .axis{
+    -fx-tick-label-fill:-color-default-text;
+}
+.slider .axis-tick-mark, .slider .axis-minor-tick-mark {
+    -fx-stroke: -color-default-text;
+}
+/*--------Text-input-----------------------------------------------*/
+
+.text-input {
+    -fx-highlight-fill: -color-highlight-text;
+	-fx-background-color: derive(-focused-color,50%);
+	-fx-text-fill:-color-text-inputs;
+}
+.text-field:focused {
+    -fx-background-color: white;
+    -fx-background-radius: 3.4, 2, 2;
+    -fx-prompt-text-fill: transparent;
+}
+//*--------PasswordField--------------------------------------------*/
+.password-field {    
+
+}
+/*--------ChoiceBox--------------------------------------------*/
+.choice-box {   
+    -fx-background-color:-default-color;
+    -fx-background-radius: 5;         
+    -fx-padding: 2 6 2 6;   
+}
+.choice-box:hover {
+    -fx-background-color: -hover-color;
+	-fx-cursor: hand;
+}
+.choice-box:showing .choice-box:showing:focused:hover{
+    -fx-background-color: -focused-color;   
+}
+.choice-box .label {
+    -fx-padding: 2 4 3 6;
+}
+.choice-box .open-button {
+    -fx-background-color: null;
+    -fx-padding: 6 1 6 7;
+}
+.choice-box .arrow {
+    -fx-background-color: -color-default-text;
+    -fx-padding: 5 8 0 0;
+    -fx-shape: "m 12.249,10.251 0,2.889 L 8.125,17 4,13.14 l 0,-2.889 4.125,3.375 4.124,-3.375 z";    
+}
+/*--------PopupMenu--------------------------------------------*/
+
+.context-menu {    
+    -fx-background-color: -bgc-lighter;
+    -fx-background-radius: 5;
+    -fx-padding: 2 2 2 2;  
+}
+.context-menu .separator {
+    -fx-padding: 2 4 2 4;
+}
+/*----------------Menu---------------------------------------------*/
+.menu {
+    -fx-padding: 5 10 5 10;
+}
+/*---------------MenuBar---------------------------*/
+.menu-bar .menu-button .label {
+    -fx-padding: 1 5 1 5;
+}
+.menu-bar {    
+    -fx-padding:  2 5 2 5;
+    -fx-spacing: 5;    
+    -fx-background-color: transparent;
+}
+.menu-bar .menu-button {    
+	-fx-padding:  5 5 5 5;
+}
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:showing {    
+    -fx-background-color: -hover-color;
+	-fx-background-radius: 5;
+}
+
+/*------------------MenuItem------------------------------------*/
+.menu-item {
+    -fx-padding: 4 5 4 5;
+	-fx-background-radius: 5;
+}
+.menu-item:hover{
+	-fx-background-color: -hover-color;
+    -fx-text-fill: -color-default-text;
+	-fx-cursor:hand;
+}
+.menu-item:focused .label {
+	-fx-background-color: -focused-color;
+    -fx-text-fill: -color-default-text;
+}
+.menu-item:focused{
+    -fx-background-color: -focused-color;
+}
+
+/*---------------TreeView and TreeCell----------------------------*/
+.tree-view {
+    -fx-background-color: -default-color;
+	-fx-background-radius:5;
+}
+.tree-cell {
+    -fx-background-color: -default-color;     
+}
+.tree-view .tree-cell:empty,
+.tree-view .tree-cell:empty:hover{
+ 	-fx-background-color: -default-color;
+}
+
+.tree-view .tree-cell:hover {
+    -fx-background-color: -hover-color;
+	-fx-background-radius: 5;
+
+}
+.tree-view .tree-cell:filled:selected,
+.tree-view .tree-cell:filled:focused:selected,
+.tree-view .tree-cell:filled:focused:selected:hover {
+    -fx-background-color: -bgc-lighter;
+	-fx-background-radius: 5;
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-shape: "m 4.75,9.501 2.889,0 3.86,4.124 -3.86,4.125 -2.889,0 L 8.125,13.625 4.75,9.501 z";
+    -fx-padding:7 6 0 0;  
+    -fx-background-color: -color-default;	
+}
+.tree-cell > .tree-disclosure-node > .arrow  {
+     -fx-background-color: -color-default-text;
+ }
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+     -fx-background-color: -color-default-text;
+	 -fx-rotate: 90;
+ }
+
+ 
+ /*----------Scroll-bar------------------------------------*/
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+     -fx-padding: 0.2em;
+	 -fx-background-color: -default-color;
+ }
+.scroll-bar > .increment-button >.arrow,
+.scroll-bar > .decrement-button >.arrow{
+	 -fx-text-fill: -color-default-text;
+ }
+.scroll-bar .thumb {
+     -fx-background-color: -hover-color;
+ }
+.scroll-bar{
+      -fx-background-color: derive(-bgc-lighter,30%);
+}
+ /*----------Corner------------------------------------*/
+.corner{
+	-fx-background-color: -default-color;
+}
+/*---------------------TableView ----------------------------------*/
+.table-view {
+    -fx-background-color: -default-color;
+    -fx-control-inner-background: -default-color;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 1;
+	-fx-background-radius:5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: -bgc-darker;
+}
+.table-row-cell {
+    -fx-table-cell-border-color: transparent;
+}
+.table-view .column-header,
+.table-view .filler {
+    -fx-border-width: 1 1.5 1 1;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent -color-default-text transparent transparent;
+    -fx-border-insets: 3 0 3 0;
+}
+
+.table-view.column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight	:bolder;
+    -fx-text-fill: -color-default-text;
+    -fx-alignment: center;
+}
+.table-view .table-row-cell:hover{
+    -fx-background-color: -hover-color;
+	-fx-background-radius:5;
+}
+.table-view .table-row-cell:selected,
+.table-view .table-row-cell:focused:selected,
+.table-view .table-row-cell:focused:selected:hover{
+	-fx-background-color: -bgc-lighter !important;
+	-fx-background-radius: 5;
+	-fx-font-weight: normal !important;
+}
+.table-view .table-row-cell:filled:unread-color{
+    -fx-background-color: -unread-color;
+    -fx-font-weight:bold;
+    -fx-background-radius:5;
+}
+.table-view .table-row-cell:unread-color:hover{
+    -fx-background-color: -hover-color;
+}
+
+.table-view .column-drag-header {    
+    -fx-background-color: -hover-color ;
+    -fx-opacity: 0.8;
+}
+.table-view .column-resize-line {  
+    -fx-background-color: -bgc-darker;
+}
+.table-view .column-overlay {
+    -fx-background-color: -hover-color ;
+    -fx-opacity: 0.33;
+}
+.table-view .arrow {
+	-fx-background-color:-color-default-text;
+    -fx-padding: 0.2em;
+    -fx-shape: "m 4,17 0,-2.889 4.124,-3.86 4.125,3.86 0,2.889 L 8.124,13.625 4,17 z";
+}
+/*------------------WebView--------------------------------*/
+
+/*------------HTML editor-----------------------------------*/
+.html-editor{
+	-fx-background-color:-bgc-darker;
+    -fx-border-width: 2;
+    -fx-border-color: -hover-color;
+	-fx-border-radius:5;
+}
+.html-editor .top-toolbar:horizontal,
+.html-editor .bottom-toolbar:horizontal,
+.html-editor .top-toolbar:horizontal .container,
+.html-editor .bottom-toolbar:horizontal .container {
+		-fx-background-color: -default-color;
+}
+
+.html-editor .top-toolbar:horizontal .button,
+.html-editor .bottom-toolbar:horizontal .button {
+    -fx-background-insets: 0,1,2,1;
+    -fx-padding: 6 8 6 8;
+}
+.html-editor .top-toolbar:horizontal .toggle-button,
+.html-editor .bottom-toolbar:horizontal .toggle-button {
+    -fx-background-insets: 0,1,2,1;
+    -fx-padding: 6 8 6 8;
+}
+.html-editor .top-toolbar:horizontal .menu-button {
+    -fx-padding:3;
+}
+.html-editor .bottom-toolbar:horizontal .combo-box .label {
+    -fx-padding:0;
+	-fx-text-fill:red;
+}
+.html-editor .top-toolbar .button{
+	-fx-background-color:-fx-body-color;
+}
+
+.html-editor .top-toolbar:horizontal .menu-button {
+    -fx-padding:3;
+}
+.html-editor .bottom-toolbar:horizontal .combo-box {
+    -fx-padding:0;
+	-fx-text-base-color:black;
+}
+.html-editor .bottom-toolbar:horizontal .combo-box .list-view .virtual-flow .list-cell{
+	-fx-text-fill:black;
+}
+
+.html-editor .bottom-toolbar:horizontal .tool-bar-overflow-button .arrow,
+.html-editor .top-toolbar:horizontal .tool-bar-overflow-button .arrow{
+     -fx-background-color: -color-default-text;
+}
+
+.html-editor .top-toolbar:horizontal .container .separator .line,
+.html-editor .bottom-toolbar:horizontal .container .separator .line{
+	visibility:true;
+    -fx-opacity: 0.5;
+}
+/* --------Tooltip-------------------*/
+.tooltip{
+	-fx-background-color: derive(-default-color,50%);
+	-fx-text-fill:-color-default-text;
+}
